@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/usr/local/bin/eb", line 5, in <module>
+    from pkg_resources import load_entry_point
+  File "/usr/local/lib/python2.7/dist-packages/distribute-0.6.10-py2.7.egg/pkg_resources.py", line 2655, in <module>
+    working_set.require(__requires__)
+  File "/usr/local/lib/python2.7/dist-packages/distribute-0.6.10-py2.7.egg/pkg_resources.py", line 648, in require
+    needed = self.resolve(parse_requirements(requirements))
+  File "/usr/local/lib/python2.7/dist-packages/distribute-0.6.10-py2.7.egg/pkg_resources.py", line 546, in resolve
+    raise DistributionNotFound(req)
+pkg_resources.DistributionNotFound: blessed==1.9.5
+
+sudo pip install --upgrade setuptools
+sudo pip install --upgrade distribute 
