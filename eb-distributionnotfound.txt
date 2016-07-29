@@ -1,3 +1,5 @@
+Distribution not found in package resoures.py
+
 Traceback (most recent call last):
   File "/usr/local/bin/eb", line 5, in <module>
     from pkg_resources import load_entry_point
@@ -8,6 +10,8 @@ Traceback (most recent call last):
   File "/usr/local/lib/python2.7/dist-packages/distribute-0.6.10-py2.7.egg/pkg_resources.py", line 546, in resolve
     raise DistributionNotFound(req)
 pkg_resources.DistributionNotFound: blessed==1.9.5
+
+Solution
 
 sudo pip install --upgrade setuptools
 sudo pip install --upgrade distribute 
